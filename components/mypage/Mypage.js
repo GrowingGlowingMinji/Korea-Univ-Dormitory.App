@@ -21,7 +21,7 @@ import {
   RowWrapper,
 } from './MypageStyle';
 
-const Mypage = ({ navigation }) => {
+const Mypage = ({ navigation, users, updateNickname }) => {
   const { spinner } = useContext(ProgressContext);
   const [userInfo, setUserInfo] = useState({
     dorm: '',
